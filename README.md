@@ -16,6 +16,19 @@ The other components consist of the usual things that r/c airplanes have like se
 
 ![Wiring_Diagram-2](https://github.com/user-attachments/assets/8858ce65-cbf9-4194-929f-40ed9af732df)
 
+## **Testing Servos with a Raspberry Pi testbed**
 
+<img width="430" height="310" alt="image" src="https://github.com/user-attachments/assets/555179d2-8d30-43dd-bda3-a42adacf6668" />
 
+While I was waiting for parts to arrive, I wanted to test my 180 degree and 360 degree servos. To do so, I used a Raspberry Pi 5 and a PWM module (Adafruit PCA9865) and a 5V 3A power supply. This is how the system would interact with the servo:
+
+<img width="342" height="194" alt="image" src="https://github.com/user-attachments/assets/2fe8ab6c-f62d-4fb7-adb5-e6b2ce193665" />
+
+## **Code for testing servos with raspberry Pi**
+
+I go more in depth in my digital notebook but to summarize, I installed certain libraries that allow for control of the servo throught the PWM module.
+
+The main code uses loops to swap between 180 and 0 degrees, to test that all possible angles work for the servo. Additionally, the lower and higher limit of the pulse was set to 500 and 2500 because those are the limits for the specific SG90 servos that I am using.
+
+REMEMBER TO ADD CODE
 
