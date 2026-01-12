@@ -32,3 +32,8 @@ The main code uses loops to swap between 180 and 0 degrees, to test that all pos
 
 REMEMBER TO ADD CODE
 
+## **Future Plans**
+
+I intend to use a ultrasonic sensor and controller to control the servos
+
+
